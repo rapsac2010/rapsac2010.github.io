@@ -63,12 +63,6 @@ body{
 
 svg{
 	fill: currentcolor;
-	width: 15px;
-	height: 15px;
-}
-img.svg{
-	width: 15px;
-	height: 15px;
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color: #6f6f6f;
@@ -953,8 +947,6 @@ body.resize .arlo_tm_mainpart{
 	        transition: all .3s ease;
 }
 .arlo_tm_services .service_list .svg{
-	width: 40px;
-	height: 40px;
 	color: var(--yellow-color);
 	position: absolute;
 	top: 50%;
