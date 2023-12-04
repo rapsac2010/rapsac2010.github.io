@@ -178,7 +178,7 @@
 										<div class="news_hidden_details">
 											<div class="news_popup_informations">
 												<div class="text">
-													<p>During an internship at the Dutch Ministry of Defence, I undertook a project to construct magnetic models for a naval minesweeper. The task involved creating a digital twin of the system yet to be built. Additionally, software was required to optimize this minesweeper given a target magnetic signature. Moreover, the code had to account for the earth magnetic field, sea state and various other external influences. This project spanned three months, and in the end, I received a grade 9.0 from my supervisor, Leon van Kouwen. Due to confidentiality, no code or paper can be provided for this project.</p>
+													<p>During an internship at the Dutch Ministry of Defence, I undertook a project to construct magnetic models for a naval minesweeper. The task involved creating a digital twin of the system yet to be built. Additionally, software was required to optimize this minesweeper given a target magnetic signature. Moreover, the code had to account for the various external influences at sea. This project spanned three months, and in the end, I received a grade 9.0 from my supervisor. Due to confidentiality, no code or paper can be provided for this project.</p>
 												</div>
 											</div>
 										</div>
@@ -1001,24 +1001,24 @@
 								</ul>
 							</div>
 							<div class="right">
-								<form action="/" method="post" class="contact_form" id="contact_form" autocomplete="off">
+								<form id="mailform" action="https://formspree.io/f/mvojjokv" method="POST" class="contact_form" id="contact_form" autocomplete="off">
 									<div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
 									<div class="empty_notice"><span>Please Fill Required Fields</span></div>
 									<div class="first">
 										<ul>
 											<li>
-												<input id="name" type="text" placeholder="Name">
+												<input id="name" name="name" type="text" placeholder="Name" required>
 											</li>
 											<li>
-												<input id="email" type="text" placeholder="Email">
+												<input id="email" name="email" type="text" placeholder="Email" required>
 											</li>
 										</ul>
 									</div>
 									<div class="last">
-										<textarea id="message" placeholder="Message"></textarea>
+										<textarea id="message" name="content" placeholder="Message" required></textarea>
 									</div>
 									<div class="arlo_tm_button" data-position="left">
-										<a id="send_message" href="#"><span>Send Message</span></a>
+										<a id="send_message" href="javascript:{}" onclick="document.getElementById('mailform').submit();"><span>Send Message</span></a>
 									</div>
 
 									<!-- If you want to change mail address to yours, please open modal.php and go to line 4 -->

@@ -663,66 +663,79 @@ body.resize .arlo_tm_mainpart{
 .arlo_tm_button[data-position="left"]{text-align: left;}
 .arlo_tm_button[data-position="center"]{text-align: center;}
 .arlo_tm_button[data-position="right"]{text-align: right;}
-.arlo_tm_button a{
-	display: inline-block;
-	color: #fff;
-	background-color: var(--blue-color);
-	padding: 18px 60px;
-	position: relative;
-	overflow: hidden;
-	text-transform: uppercase;
-	font-size: 14px;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
+.arlo_tm_button a,
+.arlo_tm_button input[type="submit"] {
+    display: inline-block;
+    color: #fff;
+    background-color: var(--blue-color);
+    padding: 18px 60px;
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
-.arlo_tm_button a:hover{
-	color: #000;
+
+.arlo_tm_button a:hover,
+.arlo_tm_button input[type="submit"]:hover {
+    color: #000;
 }
-.arlo_tm_button a span{
-	position: relative;
-	z-index: 2;
+
+.arlo_tm_button a span,
+.arlo_tm_button input[type="submit"] span {
+    position: relative;
+    z-index: 2;
 }
-.arlo_tm_button a:before{
-	position: absolute;
-	content: "";
-	width: 51%;
-	height: 100%;
-	left: 0px;
-	top: 0px;
-	background-color: var(--yellow-color);
-	transform: translateY(-100%);
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
+
+.arlo_tm_button a:before,
+.arlo_tm_button input[type="submit"]:before {
+    position: absolute;
+    content: "";
+    width: 51%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: var(--yellow-color);
+    transform: translateY(-100%);
+
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
-.arlo_tm_button a:after{
-	position: absolute;
-	content: "";
-	width: 51%;
-	height: 100%;
-	right: 0px;
-	bottom: 0px;
-	background-color: var(--yellow-color);
-	transform: translateY(100%);
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
+
+.arlo_tm_button a:after,
+.arlo_tm_button input[type="submit"]:after {
+    position: absolute;
+    content: "";
+    width: 51%;
+    height: 100%;
+    right: 0px;
+    bottom: 0px;
+    background-color: var(--yellow-color);
+    transform: translateY(100%);
+
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
 }
-.arlo_tm_button a:hover:before{
-	transform: translateY(0);
+
+.arlo_tm_button a:hover:before,
+.arlo_tm_button input[type="submit"]:hover:before {
+    transform: translateY(0);
 }
-.arlo_tm_button a:hover:after{
-	transform: translateY(0);
+
+.arlo_tm_button a:hover:after,
+.arlo_tm_button input[type="submit"]:hover:after {
+    transform: translateY(0);
 }
 
 /*---------------------------------------------------*/
